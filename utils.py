@@ -154,6 +154,7 @@ def get_month_average_info_by_city(city):
         for i in item['result']['data']['items']:
             result.append(en_month_dict_to_list(city, i))
             logging.info('获取' + city + str(i['time_point']) + '的月平均数据')
+    # print(result)
     return result
 
 
